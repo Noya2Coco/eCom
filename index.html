@@ -1,77 +1,94 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-    <title>Site de Commerce Électronique</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEADBOOST</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
-
 <body>
-    <header id="header">
+    <header>
         <nav>
-            <h1>HEADBOOST</h1>
-            <ul class="ul">
-                <li class="li"><a href="#accueil">Accueil</a></li>
-                <li class="li"><a href="#presentation">Présentation</a></li>
-                <li class="li"><a href="#contact">Contact</a></li>
-                <button class="li">Acheter</button>
-            </ul>
+            <h1>Headboost</h1>
+            <div class="right" id="navbar">
+                <p>Accueil</p>
+                <p>Présentation</p>
+                <p>Contact</p>
+                <button class="btn-acheter">Acheter</button>
+                <button class="btn-se-connecter" onclick="location.href='login.html'">Se connecter</button>
+            </div>
+            <button class="btn-acheter-horizontal">Acheter</button>
+            <button class="btn-se-connecter-horizontal" onclick="location.href='login.html'">Se connecter</button>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
-        
-        <section id="accueil" class="product-section">
-            <div class="title">
+        <section class="presentation first">
+            <div class="product-presentation">
                 <h1>Écouter de la musique, c'est vivre sa passion</h1>
-                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum odio eos beatae labore possimus. Pariatur ipsa, tempore optio placeat expedita minus cupiditate nulla iure quis error. A vitae quibusdam ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
+                    odio eos beatae labore possimus. Pariatur ipsa, tempore optio
+                    placeat expedita minus cupiditate nulla iure quis error. A vitae
+                    quibusdam ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
                 <button>Acheter maintenant</button>
                 <div class="small-images">
                     <div class="small">
-                        <img src="img/casque-blanc-1.png" alt="headphones">
+                        <img src="img/casque-blanc-1.png" alt="Casque blanc 1">
                     </div>
                     <div class="small">
-                        <img src="img/casque-blanc-2.png" alt="headphones">
+                        <img src="img/casque-blanc-2.png" alt="Casque blanc 2">
                     </div>
                     <div class="small">
-                        <img src="img/casque-blanc-3.png" alt="headphones">
+                        <img src="img/casque-blanc-3.png" alt="Casque blanc 3">
                     </div>
                 </div>
             </div>
-            <img src="img/casque-gris.png" alt="headphones">
-            
+            <div class="image-presentation">
+                <img src="img/casque-gris.png" alt="Casque gris">
+            </div>
         </section>
     </header>
-
-    <section id="produits" class="product-section">
-        <div class="title">
-            <h3 class="nouveau">Nouveau produit disponible</h3>
+    <section class="presentation second">
+        <div class="product-presentation">
+            <p class="new">Nouveau produit disponible</p>
             <h1>Le nouveau casque HeadBoost</h1>
-            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum odio eos beatae labore possimus. Pariatur ipsa, tempore optio placeat expedita minus cupiditate nulla iure quis error. A vitae quibusdam ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum odio
+                eos beatae labore possimus. Pariatur ipsa, tempore optio placeat
+                expedita minus cupiditate nulla iure quis error. A vitae quibusdam
+                veniam.
+            </p>
             <button>Voir les spécifications</button>
         </div>
-        <img src="img/casque-blanc.png" alt="headphones">
+        <div class="image-presentation">
+            <img src="img/casque-blanc.png" alt="Casque blanc">
+        </div>
     </section>
-
     <footer>
-        <div class="section-about">
-            <h2>Aide</h2>
-            <h3>contact@headboost.fr</h3>
-            <h3>Contactez-nous</h3>
-            <h3>Comment acheter</h3>
+        <div class="column">
+            <h3>Aide</h3>
+            <p>contact@headboost.fr</p>
+            <p>Contactez-nous</p>
+            <p>Comment acheter</p>
         </div>
-        <div class="section-about">
-            <h2>Recrutement</h2>
-            <h3>business@headboost.fr</h3>
-            <h3>Postuler en ligne</h3>
-            <h3>Comment faire ?</h3>
+        <div class="column">
+            <h3>Recrutement</h3>
+            <p>business@headboost.fr</p>
+            <p>Postuler en ligne</p>
+            <p>Comment faire ?</p>
         </div>
-        <div class="section-about">
-            <h2>Réseaux</h2>
-            <h3>Facebook</h3>
-            <h3>X (Twitter)</h3>
-            <h3>Instagram</h3>
+        <div class="column">
+            <h3>Réseaux</h3>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Instagram</p>
         </div>
     </footer>
-
-    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
 </body>
-
 </html>
