@@ -9,5 +9,8 @@
       "src": "/(.*)",
       "dest": "front/index.html"
     }
-  ]
+  ],
+  "static": {
+    "directory": "front"
+  }
 }
