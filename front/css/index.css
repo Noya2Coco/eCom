@@ -308,7 +308,7 @@ footer p:hover {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
     header nav .btn-se-connecter-horizontal {
         display: none;
     }
